@@ -1,0 +1,116 @@
+{
+  "type": "block_actions",
+  "user": {
+    "id": "U014ELJKE65",
+    "username": "maxdshaw",
+    "name": "maxdshaw",
+    "team_id": "T014227L81G"
+  },
+  "api_app_id": "A01HS8TDKPD",
+  "token": "NkLh4c8zM12XOec2rcsU7oK7",
+  "container": {
+    "type": "message",
+    "message_ts": "1609357763.000200",
+    "channel_id": "C01428CJ5DZ",
+    "is_ephemeral": false
+  },
+  "trigger_id": "1605524035570.1138075688050.d49c640a2315021e382b36a33faf7805",
+  "team": {
+    "id": "T014227L81G",
+    "domain": "maxshaw"
+  },
+  "enterprise": null,
+  "is_enterprise_install": false,
+  "channel": {
+    "id": "C01428CJ5DZ",
+    "name": "general"
+  },
+  "message": {
+    "type": "message",
+    "subtype": "bot_message",
+    "text": "what is affirm?",
+    "ts": "1609357763.000200",
+    "bot_id": "B01HK9B6RNJ",
+    "blocks": [
+      {
+        "type": "header",
+        "block_id": "jh=",
+        "text": {
+          "type": "plain_text",
+          "text": "Top 3 Results for",
+          "emoji": true
+        }
+      },
+      {
+        "type": "section",
+        "block_id": "k5EvZ",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*What is Affirm?*\\nAffirm is a company we partner with to offer payment plans for purchasing eyeglasses, sunglasses, contacts, and accessories on our site. This allows customers to split the cost of their order into three interest-free monthly payments, which are handled directly through Affirm. (Loans through Affirm have a 0% APR and no late fees when used to purchase at seaglass.) Learn more.",
+          "verbatim": false
+        }
+      },
+      {
+        "type": "divider",
+        "block_id": "=ih"
+      },
+      {
+        "type": "section",
+        "block_id": "=xAiL",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*How can I order using Affirm?*\\nWhen placing an order, select Affirm as your payment method during checkout. You'll be prompted to create an Affirm account and enter a few personal details. They'll notify you within seconds if you've been approved for a loan.(Learn more about Affirm's application process.)Psst. If you're having trouble checking out with Affirm, try clearing your cache, give us a call, or chat us.",
+          "verbatim": false
+        }
+      },
+      {
+        "type": "divider",
+        "block_id": "cL7"
+      },
+      {
+        "type": "section",
+        "block_id": "Q9q7F",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*Can I place an order using Affirm in store or over the phone?*\\nAffirm is only available on our website, mobile app, and select retail locations at this time.",
+          "verbatim": false
+        }
+      },
+      {
+        "type": "divider",
+        "block_id": "9scc"
+      },
+      {
+        "type": "actions",
+        "block_id": "V5i",
+        "elements": [
+          {
+            "type": "button",
+            "action_id": "bKL",
+            "text": {
+              "type": "plain_text",
+              "text": "View All results",
+              "emoji": true
+            },
+            "value": "view_all"
+          }
+        ]
+      }
+    ]
+  },
+  "response_url": "https:\\/\\/hooks.slack.com\\/actions\\/T014227L81G\\/1611687910916\\/o4UrO7ytyssBIcHQVBj0GvgT",
+  "actions": [
+    {
+      "action_id": "bKL",
+      "block_id": "V5i",
+      "text": {
+        "type": "plain_text",
+        "text": "View All results",
+        "emoji": true
+      },
+      "value": "view_all",
+      "type": "button",
+      "action_ts": "1609357765.741985"
+    }
+  ]
+}
