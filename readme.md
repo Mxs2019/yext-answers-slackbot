@@ -4,6 +4,10 @@ This repo is an example of how you could create a slackbot on top of [Yext Answe
 
 > Note: This repo is not activly maintained by Yext and there is no gurantee of quality. This is meant to showcase how you could integrate Yext Answers with Slack. This is not meant for production environments and is an example of a tech demo.
 
+# Video Walkthrough
+
+[Watch Video Walkthrough](https://www.loom.com/share/1c89932894ec49dcb86a9218521af707)
+
 # Installation
 
 To try this out in your own workspace install via the link below. Note that this bot is not meant for production environments.
