@@ -24,7 +24,9 @@ export const authRedirect = async (req: Request, res: Response) => {
     const { access_token, team } = (result as any) as ResponseType;
     await setWorkspaceToken(team.id, access_token);
 
-    res.send(`Answers Slackbot successfully installed in ${team.name}`);
+    res.send(
+      `Answers Slackbot successfully installed in ${team.name}. Go back to slack and type \\answers to get started`
+    );
   } catch (e) {
     console.log(e);
     res.sendStatus(500);

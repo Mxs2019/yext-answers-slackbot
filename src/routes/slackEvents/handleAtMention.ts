@@ -1,7 +1,7 @@
 import { WebClient } from "@slack/web-api";
 import { getUniversalResults, getVerticalResults } from "../../answers";
 import { WorkspaceConfig } from "../../db";
-import { button } from "../../slack-ui/blocks";
+import blocks from "../../slack-ui/blocks";
 import { renderUniversalResults } from "../../slack-ui/resultsRendering/renderUniversalResults";
 import { buttonValues } from "./../../enums";
 import { renderVerticalResults } from "./../../slack-ui/resultsRendering/renderVerticalResults";
@@ -25,8 +25,11 @@ export const handleAtMention = async (
       text: "Your Answers Bot is not set up. Set it up now.",
       thread_ts: response_thread_ts,
       blocks: [
-        button(
-          "Set Up Answers Bot",
+        blocks.text(
+          "Your Answers Bot is not set up. Configure the bot to continue."
+        ),
+        blocks.button(
+          "Set Up",
           buttonValues.SHOW_CONFIGURATION_MODAL,
           undefined,
           "primary"
@@ -50,7 +53,9 @@ export const handleAtMention = async (
       );
       resultBlocks = renderVerticalResults(searchQuery, verticalResponse);
       if (verticalResponse.resultsCount > verticalResponse.results.length) {
-        resultBlocks.push(button("View All Results", buttonValues.VIEW_ALL));
+        resultBlocks.push(
+          blocks.button("View All Results", buttonValues.VIEW_ALL)
+        );
       }
     } else {
       try {
@@ -70,7 +75,9 @@ export const handleAtMention = async (
               universalResponse.modules[0].results.length) ||
           universalResponse.modules.length > 0
         ) {
-          resultBlocks.push(button("View All Results", buttonValues.VIEW_ALL));
+          resultBlocks.push(
+            blocks.button("View All Results", buttonValues.VIEW_ALL)
+          );
         }
       } catch (e) {
         console.log(e);
