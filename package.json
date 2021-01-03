@@ -1,5 +1,5 @@
 {
-  "name": "answers-bot",
+  "name": "yext-answers-slackbot",
   "version": "1.0.0",
   "main": "dist/index.js",
   "scripts": {
