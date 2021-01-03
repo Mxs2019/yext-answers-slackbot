@@ -65,7 +65,7 @@ The following endpoints are exposed and hooked up to the relevant slack feature.
 | --------------------- | ------------------------------------------------------------------------- |
 | `/auth/redirect/`     | [OAuth](https://api.slack.com/authentication/oauth-v2)                    |
 | `/slack-command/`     | [Slash Commands](https://api.slack.com/interactivity/slash-commands)      |
-| `/slack-events/`      | [Event] Subscriptions](https://api.slack.com/events-api)                  |
+| `/slack-events/`      | [Event Subscriptions](https://api.slack.com/events-api)                   |
 | `/slack-interactive/` | [Interactivity](https://api.slack.com/messaging/interactivity#components) |
 
 ## Slack Permissions
