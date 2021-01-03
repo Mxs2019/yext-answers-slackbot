@@ -29,7 +29,7 @@ Before the slackbot can be used it has to be configured. Each workspace is mappe
 
 This slackbot can be used in Slack via two methods:
 
-## 1. Slash (/) Command
+## Slash (/) Command
 
 The first way to use this slackbot is with a slash command - `/answers`. A user types this command followed
 by their question and then the slackbot will show the results in a modal. This modal is only shown
@@ -41,7 +41,7 @@ For example:
 - `/answers stores in nyc`
 - `/phone number of dr. johnson`
 
-## 2. @ Mention
+## @ Mention
 
 The other way to use this slackbot is with an @mention - `@Answers bot`. A user types
 this command followed by their question and then the slackbow will respond inline.
