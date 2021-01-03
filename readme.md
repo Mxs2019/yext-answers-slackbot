@@ -55,6 +55,7 @@ This slackbot is built on top of the Yext Answers API. When a user types an @ me
 command, the system calls the Answers API with the search term and then
 renders the results inline or in a modal using the slack block layout configuration. This node app uses typescript and is built on top of the following frameworks and technologies:
 
+- **Yext Answers**: The search engine is built on top of [Yext Answers](https://yext.com/products/answers) - a natural languge search engine.
 - **Node**: The bot is built on top of Node
 - **Typescript**: The app is written in Typescript
 - **Express**: The app uses the express framework and exposes a set of REST APIs below. These API endpoints are then hooked up to the various slack hooks to get everything working.
