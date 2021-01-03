@@ -7,16 +7,16 @@ export const handleAppHomeOpened = (
   slack: WebClient,
   config?: WorkspaceConfig
 ) => {
-  const { user } = event;
+  const { user: user_id } = event;
 
   if (config) {
     slack.views.publish({
-      user_id: user,
+      user_id,
       view: configuredHome(config.experienceKey),
     });
   } else {
     slack.views.publish({
-      user_id: user,
+      user_id,
       view: notConfiguredHome(),
     });
   }
