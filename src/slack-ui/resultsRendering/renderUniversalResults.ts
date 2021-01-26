@@ -16,9 +16,14 @@ export const renderUniversalResults = (
     if (directAnswer) {
       const { answer, type } = directAnswer;
       if (directAnswer.type === "FIELD_VALUE") {
+        console.log(answer);
+        let value = answer.value as any;
+        if (answer.fieldType === "address") {
+          value = `${value.line1}, ${value.city}, ${value.region}, ${value.postalCode}`;
+        }
         blocks.push(
           text(
-            `:point_right: The *${answer.fieldName}* of *${answer.entityName}* is \`${answer.value}\`\n\n`
+            `:point_right: The *${answer.fieldName}* of *${answer.entityName}* is \`${value}\`\n\n`
           )
         );
       }
