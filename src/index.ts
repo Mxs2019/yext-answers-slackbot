@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 const MAX_RESULTS = 3;
 
-// Health Check
+// Status Check
 app.get("/", (req, res) => {
   res.send("Everything is working");
 });
